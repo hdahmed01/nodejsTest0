@@ -110,7 +110,7 @@ app.delete("/articles/:id",async(req,res)=>{
     }
 })
 
-app.get("/showArticle",async (req,res)=>{
+app.get("/",async (req,res)=>{
     const articles= await Article.find();
     
     res.render("articles.ejs",{
@@ -118,7 +118,7 @@ app.get("/showArticle",async (req,res)=>{
     })
     
 })
-app.get("/", (req,res)=>{
+app.get("/1", (req,res)=>{
   res.send(" hello in my page")  
 })
     
