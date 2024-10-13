@@ -1,0 +1,18 @@
+<!Doctype html5>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> document</title>
+    </head>
+    <body>
+        <h1> list of articles</h1>
+        <hr/>
+       <div style=" background-color: aquamarine;">
+        <% for (let art of articles) { %>
+           <h2> <%= art.title %></h2>
+            
+            <h5> <%= art.body %></h5>
+            <% } %>
+       </div>
+    </body>
+</html>
