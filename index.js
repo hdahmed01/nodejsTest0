@@ -118,6 +118,11 @@ app.get("/showArticle",async (req,res)=>{
     })
     
 })
+app.get("/", (req,res)=>{
+  res.send(" hello in my page")  
+})
+    
+
 
  app.listen(3000, ()=>{
     console.log("i m listening in  port 3000");
